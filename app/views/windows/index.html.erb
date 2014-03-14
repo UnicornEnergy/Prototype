@@ -1,0 +1,41 @@
+<h1>Listing windows</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Brandname</th>
+      <th>Manufacturer</th>
+      <th>Layers</th>
+      <th>Material</th>
+      <th>Price</th>
+      <th>Price</th>
+      <th>Height</th>
+      <th>Width</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @windows.each do |window| %>
+      <tr>
+        <td><%= window.brandname %></td>
+        <td><%= window.manufacturer %></td>
+        <td><%= window.layers %></td>
+        <td><%= window.material %></td>
+        <td><%= window.price %></td>
+        <td><%= window.price %></td>
+        <td><%= window.height %></td>
+        <td><%= window.width %></td>
+        <td><%= link_to 'Show', window %></td>
+        <td><%= link_to 'Edit', edit_window_path(window) %></td>
+        <td><%= link_to 'Destroy', window, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Window', new_window_path %>
