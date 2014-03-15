@@ -1,4 +1,7 @@
 EnergySaving::Application.routes.draw do
+  root 'homes#index'
+  resources :calculates
+
   resources :messages
 
   resources :customers
