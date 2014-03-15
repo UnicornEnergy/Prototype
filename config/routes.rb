@@ -10,6 +10,15 @@ EnergySaving::Application.routes.draw do
   resources :windows
 
   resources :manufacturers
+    resources :abouts
+     resources :homes 
+
+  
+
+    get '/img/:name', to: redirect {|params, req| "/assets/#{params[:name]}.#{params[:format]}"}
+    get '/images/:name', to: redirect {|params, req| "/assets/#{params[:name]}.#{params[:format]}"}
+    get '/stylesheets/:name', to: redirect {|params, req| "/css/#{params[:name]}.#{params[:format]}"}
+    get '/javascripts/:name', to: redirect {|params, req| "/js/#{params[:name]}.#{params[:format]}"}
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
