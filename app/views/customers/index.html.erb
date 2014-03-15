@@ -15,7 +15,7 @@
   <tbody>
     <% @customers.each do |customer| %>
       <tr>
-        <td><%= customer.salutation %></td>
+        <td><%= customer.salutation.salutation %></td>
         <td><%= customer.firstName %></td>
         <td><%= customer.lastName %></td>
         <td><%= link_to 'Show', customer %></td>
