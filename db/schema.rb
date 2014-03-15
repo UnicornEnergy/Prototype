@@ -40,10 +40,19 @@ ActiveRecord::Schema.define(version: 20140314160352) do
   create_table "materials", force: true do |t|
     t.string   "materialName"
     t.decimal  "energyProperty"
+<<<<<<< HEAD
+=======
+
+>>>>>>> 4ec4e6fe102130306c03db9e961ee5526d517702
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 4ec4e6fe102130306c03db9e961ee5526d517702
   create_table "windows", force: true do |t|
     t.string   "brandname"
     t.integer  "manufacturer_id"
