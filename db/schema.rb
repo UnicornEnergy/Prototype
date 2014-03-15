@@ -11,32 +11,33 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20140314195753) do
 
   create_table "abouts", force: true do |t|
-=======
-
-  create_table "countries", force: true do |t|
-    t.string   "iso3166cc"
-    t.string   "name"
->>>>>>> b9f49845497f2ccc8a244d0a90a82bd9a1986308
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
   create_table "calculates", force: true do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  create_table "countries", force: true do |t|
+    t.string   "iso3166cc"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "homes", force: true do |t|
-=======
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "manufacturers", force: true do |t|
     t.string   "name"
     t.string   "url"
->>>>>>> b9f49845497f2ccc8a244d0a90a82bd9a1986308
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -60,10 +61,6 @@ ActiveRecord::Schema.define(version: 20140314195753) do
     t.datetime "updated_at"
   end
 
-<<<<<<< HEAD
-=======
-
->>>>>>> b9f49845497f2ccc8a244d0a90a82bd9a1986308
   add_index "windows", ["manufacturer_id"], name: "index_windows_on_manufacturer_id"
   add_index "windows", ["materials_id"], name: "index_windows_on_materials_id"
 
