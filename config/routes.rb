@@ -6,7 +6,7 @@ EnergySaving::Application.routes.draw do
 
   resources :materials
 
-  resources :windows
+  
 
   resources :windows
 
@@ -15,6 +15,7 @@ EnergySaving::Application.routes.draw do
      resources :homes 
      resources :calculates
      resources :partners
+     resources :contacts 
 
   
 
