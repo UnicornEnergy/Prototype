@@ -17,19 +17,15 @@
   </div>
   <div class="field">
     <%= f.label :manufacturer_id %><br>
-    <%= f.text_field :manufacturer_id %>
+	<%= f.collection_select :manufacturer_id, Manufacturer.all, :id, :name %>
   </div>
   <div class="field">
     <%= f.label :layers %><br>
     <%= f.text_field :layers %>
   </div>
   <div class="field">
-    <%= f.label :material_id %><br>
-    <%= f.text_field :material_id %>
-  </div>
-  <div class="field">
-    <%= f.label :price %><br>
-    <%= f.text_field :price %>
+    <%= f.label :materials_id %><br>
+	<%= f.collection_select :materials_id, Material.all, :id, :materialName %>
   </div>
   <div class="field">
     <%= f.label :price %><br>

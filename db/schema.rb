@@ -11,7 +11,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140314132958) do
+ActiveRecord::Schema.define(version: 20140314160352) do
+
+  create_table "countries", force: true do |t|
+    t.string   "iso3166cc"
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "manufacturers", force: true do |t|
+    t.string   "name"
+    t.string   "url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "materials", force: true do |t|
     t.string   "materialName"
@@ -24,7 +38,7 @@ ActiveRecord::Schema.define(version: 20140314132958) do
     t.string   "brandname"
     t.integer  "manufacturer_id"
     t.decimal  "layers"
-    t.integer  "material_id"
+    t.integer  "materials_id"
     t.decimal  "price"
     t.decimal  "height"
     t.decimal  "width"
@@ -33,6 +47,6 @@ ActiveRecord::Schema.define(version: 20140314132958) do
   end
 
   add_index "windows", ["manufacturer_id"], name: "index_windows_on_manufacturer_id"
-  add_index "windows", ["material_id"], name: "index_windows_on_material_id"
+  add_index "windows", ["materials_id"], name: "index_windows_on_materials_id"
 
 end
