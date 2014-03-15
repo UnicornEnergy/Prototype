@@ -1,4 +1,10 @@
 EnergySaving::Application.routes.draw do
+  resources :messages
+
+  resources :customers
+
+  resources :salutations
+
   devise_for :teams
   resources :manufacturers
 
