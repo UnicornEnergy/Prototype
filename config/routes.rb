@@ -1,4 +1,5 @@
 EnergySaving::Application.routes.draw do
+  devise_for :teams
   resources :manufacturers
 
   resources :countries
