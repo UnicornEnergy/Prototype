@@ -18,7 +18,7 @@ class WindowsControllerTest < ActionController::TestCase
 
   test "should create window" do
     assert_difference('Window.count') do
-      post :create, window: { brandname: @window.brandname, height: @window.height, layers: @window.layers, manufacturer_id: @window.manufacturer_id, material_id: @window.material_id, price: @window.price, price: @window.price, width: @window.width }
+      post :create, window: { brandname: @window.brandname, height: @window.height, layers: @window.layers, manufacturer_id: @window.manufacturer_id, materials_id: @window.materials_id, price: @window.price, width: @window.width }
     end
 
     assert_redirected_to window_path(assigns(:window))
@@ -35,7 +35,7 @@ class WindowsControllerTest < ActionController::TestCase
   end
 
   test "should update window" do
-    patch :update, id: @window, window: { brandname: @window.brandname, height: @window.height, layers: @window.layers, manufacturer_id: @window.manufacturer_id, material_id: @window.material_id, price: @window.price, price: @window.price, width: @window.width }
+    patch :update, id: @window, window: { brandname: @window.brandname, height: @window.height, layers: @window.layers, manufacturer_id: @window.manufacturer_id, materials_id: @window.materials_id, price: @window.price, width: @window.width }
     assert_redirected_to window_path(assigns(:window))
   end
 

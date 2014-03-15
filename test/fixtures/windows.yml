@@ -4,8 +4,7 @@ one:
   brandname: MyString
   manufacturer_id: 
   layers: 9.99
-  material_id: 
-  price: 9.99
+  materials_id: 
   price: 9.99
   height: 9.99
   width: 9.99
@@ -14,8 +13,7 @@ two:
   brandname: MyString
   manufacturer_id: 
   layers: 9.99
-  material_id: 
-  price: 9.99
+  materials_id: 
   price: 9.99
   height: 9.99
   width: 9.99

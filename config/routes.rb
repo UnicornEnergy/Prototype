@@ -1,4 +1,8 @@
 EnergySaving::Application.routes.draw do
+  resources :manufacturers
+
+  resources :countries
+
   resources :materials
 
   resources :windows
