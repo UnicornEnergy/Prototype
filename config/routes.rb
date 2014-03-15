@@ -13,6 +13,8 @@ EnergySaving::Application.routes.draw do
   resources :manufacturers
     resources :abouts
      resources :homes 
+     resources :calculates
+     resources :partners
 
   
 
