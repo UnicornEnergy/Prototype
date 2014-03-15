@@ -47,9 +47,42 @@ p {
     text-align: center;
 }
 
+.centerMe{
+	padding-top: 100px;
+}
+
 .mt {
 	margin-top: 40px;
 }
+
+.l1{left:210px;}
+.l2{left:415px;}
+.l3{left:605px;}
+.l4{left:840px;}
+
+
+#lineImg{
+	text-align: center;
+	position: relative;
+}
+
+#lineImg div label{
+	position: absolute;
+	bottom:-30px;
+}
+
+#lineImg div{
+	display: inline;
+	text-align: center;
+	margin:auto;
+}
+
+.worker{
+	width: 200px;
+	height: 200px;
+
+}
+
 
 /* Links */
 a {
